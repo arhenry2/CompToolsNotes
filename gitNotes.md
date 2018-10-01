@@ -1,0 +1,3 @@
+# This is where I write mine Course Notes for *Computer Class*
+## On 25 September 2018 I created this file in an exercise to fully understand github's helping capabities.
+## Let's hope it works...
