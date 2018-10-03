@@ -62,9 +62,10 @@ echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
 
 echo "chr12:74-431" | gsed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
 > chr12 74      431
+
 *use `gsed` to utilize GNU sed to make more human-readable*
 
 echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\ \2\ \3/'
 > chr12 74 431
 
-*without gsed, replace `t` with ` ` (a space); achieve same as `gsed`
+*without gsed, replace `t` with ` ` (a space); achieve same as `gsed`*
