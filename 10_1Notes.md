@@ -54,12 +54,17 @@ sooo many options on her website
 - `s///gi` case-insensitive search *(/// = /pattern/replacement/)*
 - `s///p` print to screen if match, don't print to output
 - uses similar notations as `grep`
-ex.) 
-`Ashleys-MacBook-Air-3:chapter-07-unix-data-tools ashleyhenry$ echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
+
+example
+
+echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
 > chr12t74t431
-Ashleys-MacBook-Air-3:chapter-07-unix-data-tools ashleyhenry$ echo "chr12:74-431" | gsed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
+
+echo "chr12:74-431" | gsed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\t\2\t\3/'
 > chr12 74      431
 *use `gsed` to utilize GNU sed to make more human-readable*
-Ashleys-MacBook-Air-3:chapter-07-unix-data-tools ashleyhenry$ echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\ \2\ \3/'
+
+echo "chr12:74-431" | sed -E 's/^(chr[^:]+):([0-9]+)-([0-9]+)/\1\ \2\ \3/'
 > chr12 74 431
+
 *without gsed, replace `t` with ` ` (a space); achieve same as `gsed`
